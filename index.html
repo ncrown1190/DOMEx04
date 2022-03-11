@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Money</title>
+  </head>
+  <body>
+    <p class="total">Total: $0.00</p>
+    <form>
+      <label for="howMany"> How many? </label>
+      <input id="howMany" type="number" name="quantity" min="1" value="1" />
+
+      <label for="coinType">Which Coin:</label>
+
+      <select id="coinType" name="coinType">
+        <option value="penny">Penny</option>
+        <option value="nickel">Nickel</option>
+        <option value="dime">Dime</option>
+        <option value="quarter">Quarter</option>
+      </select>
+
+      <button type="submit">Make Money!</button>
+    </form>
+
+    <section class="coinSection"></section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
